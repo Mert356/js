@@ -1,0 +1,55 @@
+html,body{
+    margin: 0;
+    height: 100%;
+    padding: 0;
+}
+h1{
+    font-size: 75px;
+}
+body{
+    background-color:darkcyan;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+img{
+    height: 150px;
+    width: 150px;
+}
+.options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.option{
+    border: none;
+    background-color: cornflowerblue;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;
+}
+.option:hover{
+    background-color: darkblue;
+}
+.chosen{
+    font-size: 40px;
+    margin: 5px;
+}
+#result{
+    font-size: 75px;
+    margin: 10px;
+    font-weight: bold;
+    text-shadow: 5px 5px 5px gainsboro;
+}
+.scores{
+    text-align: left;
+    margin: 5px;
+    font-size: 30px;
+}
