@@ -1,0 +1,94 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body{
+    background-color: darkcyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+#head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+button{
+    height: 30px;
+    width: 100px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: cadetblue;
+    border: none;
+}
+button:hover{
+    background-color: rgb(36, 109, 109);
+}
+input{
+    background-color: cadetblue;
+    border: none;
+    height: 30px;
+    border-radius: 5px;
+    width: 200px;
+}
+input:focus{
+    outline: none;
+}
+h1{
+    font-size: 75px;
+}
+#result{
+    height: 400px;
+    width: 300px;
+    border-radius: 5px;
+    padding: 10px;
+    background: linear-gradient(rgb(255, 0, 255),rgb(0, 94, 255));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    visibility: hidden;
+}
+p{
+    margin: 20px;
+}
+#name{
+    font-size: 40px;
+}
+#temperature{
+    font-size: 30px;
+}
+#humidity{
+    font-size: 20px;
+}
+#clouds{
+    font-size: 20px;
+}
+img{
+    height: 100px;
+    width: 100px;
+    visibility: hidden;
+}
+#error{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 314px;
+    height: 100px;
+    font-size: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    background: linear-gradient(90deg,rgb(255, 0, 255),rgb(0, 94, 255));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
