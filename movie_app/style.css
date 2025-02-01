@@ -1,0 +1,120 @@
+html,body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:#1F2937;
+}
+input{
+    background-color: #F3F4F6;
+    border: 3px solid #B0BEC5;
+    height: 40px;
+    width: 200px;
+    border-radius: 10px;
+}
+input::placeholder{
+    color:  #000000;
+}
+input:focus{
+    outline: none;
+}
+button{
+    height: 100%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    background-color: #FF6F00 ;
+    color: #FFFFFF;
+}
+button:hover{
+    background-color:#FF8C42 ;
+}
+#head{
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#informations{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    background-color: #2D3748;
+    height: 500px;
+    width: 300px;
+    border-radius: 10px;
+    border: 2px solid #FFD700;
+}
+#movieCard{
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+img{
+    border-radius: 10px;
+    border: 2px solid #FFD700;
+    height: 500px;
+    width: 300px;
+}
+#name{
+    font-size: 40px;
+    text-align: center;
+}
+p{
+    color: #CBD5E1 ;
+    margin: 5px;
+}
+#error{
+    color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 100px;
+    width: 400px;
+    background-color: #F87171;
+    border-radius: 10px;
+    font-size: 40px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+#loading{
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
