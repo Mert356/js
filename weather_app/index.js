@@ -1,3 +1,4 @@
+//powered by https://openweathermap.org/api
 const apiKey = "Yout api key";
 const myButton = document.getElementById("get");
 const result = document.getElementById("result");
