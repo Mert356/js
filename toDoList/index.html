@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div id="searchBarContainer">
+            <input type="text"  id="searchBar" placeholder="Search note...">
+                <img src="./images/büyütec.png" id="büyütec">
+        </div>
+        <select name="select" id="filter" title="select">
+            <option value="" selected>All</option>
+            <option value="red">Red</option>
+            <option value="yellow">Yellow</option>
+            <option value="green">Green</option>
+        </select>
+        <button type="submit" id="theme">
+            <img src="./images/sun.png" alt="image" id="themeImage" data-theme="light">
+        </button>
+        <button type="submit" id="addButton">+</button>
+        <div id="notes">
+            <div id="addNoteScreen">
+                <h2>NEW NOTE</h2>
+                <input type="text" placeholder="Enter your note..." id="addNote">
+                <div id="buttons">
+                    <button type="submit" id="cancel">Cancel</button>
+                    <button type="submit" id="apply">Apply</button>
+                </div>
+            </div>
+        </div>
+        <div id="emptyDiv">
+            <img src="./images/detective.png" alt="detective" id="detective">
+            <p id="empty">Empty ...</p>
+        </div>
+        
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
